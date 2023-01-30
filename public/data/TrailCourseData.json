@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "category": "서울",
+    "thumbnail": "/images/TrailCourseImg/trail1.jpg",
+    "title": "주말엔 댕댕이와 함께 뚝섬유원지",
+    "profile_img": "/images/TrailCourseImg/trail1.jpg",
+    "nickname": "펫위주",
+    "scrapCount": "5",
+    "likeCount": "121"
+  },
+  {
+    "id": 2,
+    "category": "경기",
+    "thumbnail": "/images/TrailCourseImg/trail2.jpg",
+    "title": "반려동물과 함께하는 가평 산책로",
+    "profile_img": "/images/TrailCourseImg/trail2.jpg",
+    "nickname": "펫위주",
+    "scrapCount": "9",
+    "likeCount": "130"
+  },
+  {
+    "id": 3,
+    "category": "서울",
+    "thumbnail": "/images/TrailCourseImg/trail3.jpg",
+    "title": "한강 산책로 추천",
+    "profile_img": "/images/TrailCourseImg/trail3.jpg",
+    "nickname": "펫위주",
+    "scrapCount": "2",
+    "likeCount": "100"
+  },
+  {
+    "id": 4,
+    "category": "서울",
+    "thumbnail": "/images/TrailCourseImg/trail1.jpg",
+    "title": "주말엔 댕댕이와 함께 뚝섬유원지",
+    "profile_img": "/images/TrailCourseImg/trail1.jpg",
+    "nickname": "펫위주",
+    "scrapCount": "5",
+    "likeCount": "121"
+  },
+  {
+    "id": 5,
+    "category": "경기",
+    "thumbnail": "/images/TrailCourseImg/trail2.jpg",
+    "title": "반려동물과 함께하는 가평 산책로",
+    "profile_img": "/images/TrailCourseImg/trail2.jpg",
+    "nickname": "펫위주",
+    "scrapCount": "9",
+    "likeCount": "130"
+  },
+  {
+    "id": 6,
+    "category": "서울",
+    "thumbnail": "/images/TrailCourseImg/trail3.jpg",
+    "title": "한강 산책로 추천",
+    "profile_img": "/images/TrailCourseImg/trail3.jpg",
+    "nickname": "펫위주",
+    "scrapCount": "2",
+    "likeCount": "100"
+  }
+]
