@@ -1,5 +1,5 @@
 const theme = {
-  pointColor: `rgb(164, 21, 35)`,
+  pointColor: `rgb(164, 32, 35)`,
   radius: `5px`,
 };
 
