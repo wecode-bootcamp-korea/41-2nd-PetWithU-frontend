@@ -6,6 +6,7 @@ import Main from './pages/Main/Main';
 import Login from './pages/Login/Login';
 import Community from './pages/Community/Community';
 import Feed from './pages/Feed/Feed';
+import TrailCourseList from './pages/TrailCourse/TrailCourseList';
 import Store from './pages/Store/Store';
 import CommonDetail from './pages/Detail/CommonDetail/CommonDetail';
 import Cart from './pages/Cart/Cart';
@@ -19,6 +20,7 @@ export default function Router() {
         <Route path="/login" element={<Login />} />
         <Route path="/community" element={<Community />} />
         <Route path="/feed" element={<Feed />} />
+        <Route path="/trail" element={<TrailCourseList />} />
         <Route path="/store" element={<Store />} />
         <Route path="/detail" element={<CommonDetail />} />
         <Route path="/cart" element={<Cart />} />
