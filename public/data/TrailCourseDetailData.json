@@ -1,0 +1,49 @@
+{
+  "postInfo": {
+    "postId": 1,
+    "userId": 1,
+    "nickname": "펫우주",
+    "profileImage": "/images/TrailCourseImg/trail3.jpg",
+    "createdAt": "2023-02-05T14:22:38.000Z",
+    "city": "서울특별시",
+    "arrondissement": "강남구",
+    "title": "댕댕이와 함께하는 주말 산책",
+    "thumbnail": "/images/TrailCourseImg/trail3.jpg",
+    "likeCount": "4",
+    "collectionCount": "3"
+  },
+  "postMaps": [
+    {
+      "text": "마루공원",
+      "locationID": 14638011,
+      "Lat": "37.496164504717505",
+      "Lng": "127.08079839486928"
+    }
+  ],
+  "postContent": [
+    {
+      "id": 1,
+      "content": "안늉1",
+      "imageUrl": "/images/TrailCourseImg/trail3.jpg"
+    },
+    {
+      "id": 2,
+      "content": "안늉2",
+      "imageUrl": "/images/TrailCourseImg/trail3.jpg"
+    }
+  ],
+  "postReviews": [
+    {
+      "id": 1,
+      "userProfileImg": "/images/TrailCourseImg/trail1.jpg",
+      "username": "안늉탱",
+      "content": "이번 주말에 만나요"
+    },
+    {
+      "id": 2,
+      "userProfileImg": "/images/TrailCourseImg/trail1.jpg",
+      "username": "ddd",
+      "content": "wow"
+    }
+  ]
+}
