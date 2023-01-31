@@ -8,3 +8,10 @@ Project Manager: 강서윤(FE)
 
 Frontend: 강서윤, 권나현, 배경민
 Backend: 최민주
+
+폰트 컬러 : black , rgb(164, 21, 35)
+배경 컬러 : white , rgb(243, 234, 221)
+
+styled-components 사용 / Pascalcase
+
+rebase사용
