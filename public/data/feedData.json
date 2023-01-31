@@ -1,0 +1,30 @@
+[
+  {
+    "userImg": "/images/123.png",
+    "userId": "im_gm",
+    "feedImg": "/images/123.png",
+    "feedText": "ㅎㅇ",
+    "tag": ["#안녕", "#헬로", "#하이"]
+  },
+  {
+    "userImg": "/images/123.png",
+    "userId": "im_sy",
+    "feedImg": "/images/image.png",
+    "feedText": "ㅂㅇ",
+    "tag": ["#잘가", "#바이", "#안녕"]
+  },
+  {
+    "userImg": "/images/123.png",
+    "userId": "im_nh",
+    "feedImg": "/images/123.png",
+    "feedText": "왜",
+    "tag": ["#엥", "#대체", "#어째서"]
+  },
+  {
+    "userImg": "/images/123.png",
+    "userId": "im_mj",
+    "feedImg": "/images/123.png",
+    "feedText": "와이",
+    "tag": ["#왜", "#어째서", "#응?"]
+  }
+]
