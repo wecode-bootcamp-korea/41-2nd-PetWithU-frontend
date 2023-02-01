@@ -5,7 +5,7 @@ export const Login = styled.div`
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 70vh;
+  height: 700px;
 `;
 
 export const LoginBox = styled.div`
