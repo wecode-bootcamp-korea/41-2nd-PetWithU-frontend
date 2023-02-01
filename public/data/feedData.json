@@ -1,30 +1,131 @@
-[
-  {
-    "userImg": "/images/123.png",
-    "userId": "im_gm",
-    "feedImg": "/images/123.png",
-    "feedText": "ㅎㅇ",
-    "tag": ["#안녕", "#헬로", "#하이"]
-  },
-  {
-    "userImg": "/images/123.png",
-    "userId": "im_sy",
-    "feedImg": "/images/image.png",
-    "feedText": "ㅂㅇ",
-    "tag": ["#잘가", "#바이", "#안녕"]
-  },
-  {
-    "userImg": "/images/123.png",
-    "userId": "im_nh",
-    "feedImg": "/images/123.png",
-    "feedText": "왜",
-    "tag": ["#엥", "#대체", "#어째서"]
-  },
-  {
-    "userImg": "/images/123.png",
-    "userId": "im_mj",
-    "feedImg": "/images/123.png",
-    "feedText": "와이",
-    "tag": ["#왜", "#어째서", "#응?"]
-  }
-]
+{
+  "postList": [
+    {
+      "postHeader": {
+        "postId": 24,
+        "userId": 1,
+        "nickname": "12312aas1",
+        "profileImage": "http://k.kakaocdn.net/dn/uCsLz/btrJmxO8ewM/uEhkd5isOAcF2HeTuwpFl1/img_640x640.jpg",
+        "createdAt": "2023-02-04T14:02:43.000Z",
+        "likeCount": "0",
+        "likeState": "false",
+        "collectionCount": "0",
+        "collectionState": "false"
+      },
+      "postContent": [
+        {
+          "category_id": 3,
+          "content": "강아지 미용 샵 추천해주세요",
+          "image_url": "https://user-images.githubusercontent.com/53294075/216764446-ddffa4d6-3e5d-48ad-93a0-0a41bff2d3d4.png",
+          "points": [
+            {
+              "point_x": 10,
+              "point_y": 10,
+              "product_id": 1
+            },
+            {
+              "point_x": 10,
+              "point_y": 10,
+              "product_id": 2
+            }
+          ],
+          "hashtags": ["강아지", "강쥐스타그램", "멍스타그램"]
+        },
+        {
+          "category_id": 2,
+          "content": "멜크멍",
+          "image_url": "https://user-images.githubusercontent.com/53294075/216764446-ddffa4d6-3e5d-48ad-93a0-0a41bff2d3d4.png",
+          "points": [
+            {
+              "point_x": 10,
+              "point_y": 10,
+              "product_id": 3
+            },
+            {
+              "point_x": 10,
+              "point_y": 10,
+              "product_id": 4
+            }
+          ],
+          "hashtags": ["강아지", "멜크", "배찌그램"]
+        }
+      ],
+      "reviews": [
+        {
+          "userId": 1,
+          "nickname": "zz_ozz",
+          "profileImage": "http://k.kakaocdn.net/dn/uCsLz/btrJmxO8ewM/uEhkd5isOAcF2HeTuwpFl1/img_640x640.jpg",
+          "content": "배찌 사진 더 주세요~",
+          "createdAt": "2023-02-04T15:23:20.000Z"
+        },
+        {
+          "userId": 1,
+          "nickname": "zz_ozz",
+          "profileImage": "http://k.kakaocdn.net/dn/uCsLz/btrJmxO8ewM/uEhkd5isOAcF2HeTuwpFl1/img_640x640.jpg",
+          "content": "배찌 사진 더 주세요~",
+          "createdAt": "2023-02-04T15:23:20.000Z"
+        },
+        {
+          "userId": 1,
+          "nickname": "zz_ozz",
+          "profileImage": "http://k.kakaocdn.net/dn/uCsLz/btrJmxO8ewM/uEhkd5isOAcF2HeTuwpFl1/img_640x640.jpg",
+          "content": "배찌 사진 더 주세요~",
+          "createdAt": "2023-02-04T15:23:20.000Z"
+        }
+      ]
+    },
+    {
+      "postHeader": {
+        "postId": 23,
+        "userId": 1,
+        "nickname": "ppopxx_",
+        "profileImage": "http://k.kakaocdn.net/dn/uCsLz/btrJmxO8ewM/uEhkd5isOAcF2HeTuwpFl1/img_640x640.jpg",
+        "createdAt": "2023-02-04T14:02:42.000Z",
+        "likeCount": "0",
+        "likeState": "false",
+        "collectionCount": "0",
+        "collectionState": "false"
+      },
+      "postContent": [
+        {
+          "category_id": 3,
+          "content": "강아지 미용 샵 추천해주세요",
+          "image_url": "https://user-images.githubusercontent.com/53294075/216764446-ddffa4d6-3e5d-48ad-93a0-0a41bff2d3d4.png",
+          "points": [
+            {
+              "point_x": 10,
+              "point_y": 10,
+              "product_id": 1
+            },
+            {
+              "point_x": 10,
+              "point_y": 10,
+              "product_id": 2
+            }
+          ],
+          "hashtags": ["강아지", "강쥐스타그램", "멍스타그램"]
+        },
+        {
+          "category_id": 2,
+          "content": "멜크멍",
+          "image_url": "https://user-images.githubusercontent.com/53294075/216764446-ddffa4d6-3e5d-48ad-93a0-0a41bff2d3d4.png",
+          "points": [
+            {
+              "point_x": 10,
+              "point_y": 10,
+              "product_id": 3
+            },
+            {
+              "point_x": 10,
+              "point_y": 10,
+              "product_id": 4
+            }
+          ],
+          "hashtags": ["강아지", "멜크", "배찌그램"]
+        }
+      ],
+      "reviews": []
+    }
+  ],
+  "totalCount": 100
+}
