@@ -9,6 +9,7 @@ import Feed from './pages/Feed/Feed';
 import Store from './pages/Store/Store';
 import CommonDetail from './pages/Detail/CommonDetail/CommonDetail';
 import Cart from './pages/Cart/Cart';
+import KakaoLogin from './pages/Login/KakaoLogin';
 
 export default function Router() {
   return (
@@ -17,6 +18,7 @@ export default function Router() {
       <Routes>
         <Route path="" element={<Main />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/kakaoLogin" element={<KakaoLogin />}></Route>
         <Route path="/community" element={<Community />} />
         <Route path="/feed" element={<Feed />} />
         <Route path="/store" element={<Store />} />

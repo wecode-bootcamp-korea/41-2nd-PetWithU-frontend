@@ -23,7 +23,7 @@ function Nav() {
             );
           })}
         </div>
-        <N.InputBox placeholder="검색어 입력"></N.InputBox>
+        <N.InputBox placeholder="검색어 입력" />
         <div>
           {MY_LIST.map(({ name }) => {
             return <N.MyBtn key={name}>{name}</N.MyBtn>;
