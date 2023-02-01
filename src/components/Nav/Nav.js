@@ -14,7 +14,7 @@ function Nav() {
   const delToken = e => {
     if (e.target.name === '로그아웃') {
       localStorage.removeItem('token');
-      navigate('/main');
+      navigate('/');
     } else {
       navigate('/login');
     }
@@ -73,7 +73,7 @@ function Nav() {
             <N.AddFeedBtn
               onClick={() => {
                 setWrite(!write);
-                navigate('/feed'); //추후 글쓰기 페이지이동으로 수정예정
+                navigate('/community'); //추후 글쓰기 페이지이동으로 수정예정
               }}
             >
               글쓰기

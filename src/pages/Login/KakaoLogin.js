@@ -26,7 +26,7 @@ const KakaoLogin = () => {
   };
 
   const postToken = (key, value) => {
-    fetch('http://13.125.233.27:3000/users/kakaologin', {
+    fetch('http://3.38.247.226:3000/users/kakaologin', {
       method: 'POST',
       headers: {
         'Content-Type': 'Authoriaztion',
@@ -38,7 +38,7 @@ const KakaoLogin = () => {
       .then(data => {
         if (data.jwtToken) {
           localStorage.setItem('token', data.jwtToken);
-          navigate('/main');
+          navigate('/');
         }
       });
   };
