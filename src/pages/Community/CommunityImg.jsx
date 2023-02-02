@@ -1,26 +1,32 @@
-import React, { useContext } from 'react';
-import { UserContext } from './context/UserContext';
+import React, { useContext, useRef } from 'react';
 import * as C from './CommunityStyle';
 import { BsTrash } from 'react-icons/bs';
-import { GoX } from 'react-icons/go';
 import CommunityForm from './CommunityForm';
+import CommunityPlusItem from './CommunityPlusItem';
+import { PlusContext } from './context/PlusContext';
 
 export default function CommunityImg({ idx, imgUrl, addCommunityForm }) {
+  const { plusItem, setPlusItem } = useContext(PlusContext);
+  const plusId = useRef(0);
+  const handlePlusItem = e => {
+    setPlusItem([
+      ...plusItem,
+      {
+        id: plusId.current++,
+        x: e.nativeEvent.offsetX,
+        y: e.nativeEvent.offsetY,
+      },
+    ]);
+  };
+  console.log(plusItem);
   return (
     <C.CommunityBox>
       <C.ImgContainer key={idx}>
-        <C.CommunityImg src={imgUrl} alt="img" />
+        <C.CommunityImg src={imgUrl} alt="img" onClick={handlePlusItem} />
         <BsTrash className="trashIcon" />
-        <C.PlusItem />
-        <C.Search>
-          <C.SearchInputBox>
-            <C.SearchInput type="text" placeholder="검색어를 입력하세요" />
-            <GoX />
-          </C.SearchInputBox>
-          <C.SearchList>
-            <C.SearchListItem>검색리스트</C.SearchListItem>
-          </C.SearchList>
-        </C.Search>
+        {plusItem.map(item => {
+          return <CommunityPlusItem item={item} />;
+        })}
       </C.ImgContainer>
       <C.CommunityFormContainer>
         <CommunityForm addCommunityForm={addCommunityForm} />

@@ -72,6 +72,8 @@ export const PlusItem = styled.div`
   height: 50px;
   background-color: rgb(243, 234, 221);
   position: absolute;
+  left: 0;
+  top: 0;
 `;
 export const Search = styled.div`
   width: 200px;
