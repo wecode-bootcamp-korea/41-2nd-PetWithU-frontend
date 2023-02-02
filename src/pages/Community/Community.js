@@ -1,52 +1,41 @@
 import React, { useRef, useState, useEffect } from 'react';
 import * as C from './CommunityStyle';
-import { BsTrash } from 'react-icons/bs';
-import { IoMdArrowDropdown } from 'react-icons/io';
-import { GoX } from 'react-icons/go';
+import { GrLinkUp } from 'react-icons/gr';
+import CommunityContainer from './CommunityContainer';
+import { UserContext } from './context/UserContext';
 
-function Community() {
+const Community = () => {
+  const [imgUrl, setImgUrl] = useState([]);
+  const topToScroll = useRef();
+  const upload = useRef();
+  const imgUpLoad = e => {
+    setImgUrl(prev => [...prev, URL.createObjectURL(upload.current.files[0])]);
+  };
+
+  const goToTop = () => {
+    topToScroll.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <C.Community>
-      <C.CommunityContainer>
-        <C.ImgContainer>
-          <C.CommunityImg src="" alt="img" />
-          <BsTrash className="trashIcon" />
-          <C.PlusItem />
-          <C.Search>
-            <C.SearchInputBox>
-              <C.SearchInput type="text" placeholder="검색어를 입력하세요" />
-              <GoX />
-            </C.SearchInputBox>
-            <C.SearchList>
-              <C.SearchListItem>검색리스트</C.SearchListItem>
-            </C.SearchList>
-          </C.Search>
-        </C.ImgContainer>
+    <UserContext.Provider value={{ imgUrl, setImgUrl }}>
+      <C.Community ref={topToScroll}>
+        <CommunityContainer />
+        <C.CommunityBtnBox>
+          <C.LabelFileStyle htmlFor="file">파일추가</C.LabelFileStyle>
+          <C.InputFileStyle
+            type="file"
+            id="file"
+            ref={upload}
+            multiple
+            onChange={imgUpLoad}
+          />
 
-        <C.InputFileStyle type="file" id="file" accept="image/*" />
-
-        <C.CommunityFormContainer>
-          <C.CommunityForm>
-            <C.CommunityP></C.CommunityP>
-            <IoMdArrowDropdown className="dropDown" />
-            <C.CommunityList>
-              <C.CommunityList>list</C.CommunityList>
-            </C.CommunityList>
-          </C.CommunityForm>
-
-          <C.CommunityText placeholder="사진에 대해 설명해주세요" />
-          <div>
-            <C.HashTagInput type="text" />
-            <ul>
-              <li></li>
-            </ul>
-          </div>
-          <C.CommunityBtn>추가하기</C.CommunityBtn>
-        </C.CommunityFormContainer>
-      </C.CommunityContainer>
-      <C.AddBtn>올리기</C.AddBtn>
-    </C.Community>
+          <C.CommunityBtn>올리기</C.CommunityBtn>
+        </C.CommunityBtnBox>
+        <GrLinkUp className="goTo" onClick={goToTop} />
+      </C.Community>
+    </UserContext.Provider>
   );
-}
+};
 
 export default Community;

@@ -5,27 +5,48 @@ export const Community = styled.div`
   flex-flow: column;
   align-items: center;
   margin-top: 50px;
+  position: relative;
+  .goTo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: ${props => props.theme.pointColor};
+  }
 `;
+
 export const CommunityContainer = styled.div`
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
+  margin-bottom: 50px;
 `;
+
 export const InputFileStyle = styled.input`
   display: none;
 `;
 export const LabelFileStyle = styled.label`
-  width: 300px;
-  height: 300px;
-  border: 1px solid ${props => props.theme.pointColor};
-  font-size: 5rem;
-  color: ${props => props.theme.pointColor};
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  &:first-child {
-    opacity: 0.5;
+  width: 425px;
+  font-size: 1rem;
+  text-align: center;
+  background-color: ${props => props.theme.pointColor};
+  opacity: 0.7;
+  color: rgb(243, 234, 221);
+  border: none;
+  border-radius: ${props => props.theme.radius};
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
   }
+`;
+export const CommunityBox = styled.div`
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
 `;
 export const ImgContainer = styled.div`
   width: 500px;
@@ -133,7 +154,30 @@ export const CommunityText = styled.textarea`
   resize: none;
   border-radius: ${props => props.theme.radius};
 `;
+export const CommunityTextBox = styled.div``;
+export const CommunityTextList = styled.ul``;
+export const CommunityTextListItem = styled.li``;
+export const CommunityBtnBox = styled.div`
+  display: flex;
+`;
+
 export const CommunityBtn = styled.button`
+  margin-top: 20px;
+  width: 425px;
+  border: none;
+  background-color: ${props => props.theme.pointColor};
+  opacity: 0.7;
+  color: rgb(243, 234, 221);
+  padding: 20px;
+  font-size: 1rem;
+  border-radius: ${props => props.theme.radius};
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+`;
+
+export const AddBtn = styled.button`
   position: absolute;
   font-size: 1rem;
   bottom: 0;
@@ -146,22 +190,6 @@ export const CommunityBtn = styled.button`
   cursor: pointer;
   &:hover {
     opacity: 0.8;
-  }
-`;
-
-export const AddBtn = styled.button`
-  width: 850px;
-  border: none;
-  background-color: ${props => props.theme.pointColor};
-  opacity: 0.7;
-  color: rgb(243, 234, 221);
-  margin-top: 20px;
-  padding: 20px;
-  font-size: 1rem;
-  border-radius: ${props => props.theme.radius};
-  &:hover {
-    opacity: 0.5;
-    cursor: pointer;
   }
 `;
 export const HashTagInput = styled.input`
