@@ -1,17 +1,17 @@
-import React, { useContext, useRef, useState } from 'react';
+import React from 'react';
 import * as C from './CommunityStyle';
-import { ImgContext } from './context/ImageContext';
 import CommunityImg from './CommunityImg';
 
-const CommunityContainer = ({ addCommunityForm, id }) => {
-  const { imgUrl, setImgUrl } = useContext(ImgContext);
-
+const CommunityContainer = ({ addCommunityForm, data, setData }) => {
   return (
-    <C.CommunityContainer key={id}>
-      {imgUrl.map((imgUrl, idx) => {
+    <C.CommunityContainer>
+      {data.map((item, idx) => {
         return (
           <CommunityImg
-            imgUrl={imgUrl}
+            key={item.id}
+            data={data}
+            item={item}
+            setData={setData}
             idx={idx}
             addCommunityForm={addCommunityForm}
           />

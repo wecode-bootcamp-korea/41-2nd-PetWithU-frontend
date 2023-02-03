@@ -15,7 +15,18 @@ export const Community = styled.div`
     color: ${props => props.theme.pointColor};
   }
 `;
-
+export const Empty = styled.div`
+  width: 50%;
+  text-align: center;
+  border: 1px solid ${props => props.theme.pointColor};
+  padding: 100px 0;
+  border-radius: ${props => props.theme.radius};
+  .camera {
+    font-size: 5rem;
+    color: ${props => props.theme.pointColor};
+    opacity: 0.6;
+  }
+`;
 export const CommunityContainer = styled.div`
   display: flex;
   flex-flow: column wrap;
@@ -68,15 +79,23 @@ export const CommunityImg = styled.img`
   /* object-fit: cover; */
 `;
 export const PlusItem = styled.div`
-  width: 50px;
-  height: 50px;
-  background-color: rgb(243, 234, 221);
+  width: 25px;
+  height: 25px;
+  background-color: ${props => props.theme.pointColor};
   position: absolute;
   left: 0;
   top: 0;
+  border-radius: 100%;
+  color: rgb(243, 234, 221);
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  cursor: pointer;
 `;
 export const Search = styled.div`
   width: 200px;
+  height: 200px;
+  overflow: scroll;
   background-color: #fff;
   border-radius: ${props => props.theme.radius};
   padding: 5px;
@@ -87,6 +106,10 @@ export const Search = styled.div`
 export const SearchInputBox = styled.div`
   display: flex;
   justify-content: space-between;
+
+  .x {
+    cursor: pointer;
+  }
 `;
 export const SearchInput = styled.input`
   border: none;
@@ -94,7 +117,23 @@ export const SearchInput = styled.input`
   margin-bottom: 10px;
 `;
 export const SearchList = styled.ul``;
-export const SearchListItem = styled.li``;
+export const SearchListItem = styled.li`
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+`;
+export const SearchItemImgBox = styled.div`
+  margin: 5px 0;
+`;
+export const SearchItemImg = styled.img`
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+`;
+export const SearchItemText = styled.div`
+  margin-left: 5px;
+  font-size: 12px;
+`;
 
 export const CommunityFormContainer = styled.div`
   width: 300px;
@@ -156,8 +195,23 @@ export const CommunityText = styled.textarea`
   resize: none;
   border-radius: ${props => props.theme.radius};
 `;
-export const CommunityTextBox = styled.div``;
-export const CommunityTextList = styled.ul``;
+export const CommunityTextBox = styled.div`
+  display: flex;
+  flex-flow: wrap;
+  width: 300px;
+`;
+export const CommunityTextList = styled.ul`
+  min-width: 70px;
+  background-color: ${props => props.theme.pointColor};
+  color: rgb(243, 234, 221);
+  opacity: 0.4;
+  border: none;
+  outline: none;
+  padding: 6px 10px;
+  margin-top: 10px;
+  margin-right: 5px;
+  border-radius: ${props => props.theme.radius};
+`;
 export const CommunityTextListItem = styled.li``;
 export const CommunityBtnBox = styled.div`
   display: flex;
@@ -199,12 +253,12 @@ export const HashTagInput = styled.input`
   color: rgb(243, 234, 221);
   min-width: 70px;
   opacity: 0.4;
-  margin-top: 10px;
-  padding: 6px 10px;
   border: none;
-  outline: none;
   border-radius: ${props => props.theme.radius};
-  display: inline;
+  outline: none;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 6px 10px;
 `;
 export const HashTagList = styled.ul`
   display: inline;
