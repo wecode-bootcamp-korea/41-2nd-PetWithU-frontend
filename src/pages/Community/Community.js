@@ -23,6 +23,16 @@ const Community = () => {
     ]);
   };
 
+  const fileCheck = e => {
+    e.preventDefault();
+    e.persist();
+
+    let files = e.target.files[0];
+    let formData = new FormData();
+    formData.append('file', files);
+    console.log(formData);
+  };
+
   const goToTop = () => {
     topToScroll.current.scrollIntoView({ behavior: 'smooth' });
   };
@@ -45,6 +55,7 @@ const Community = () => {
           ref={upload}
           multiple
           onChange={imgUpLoad}
+          name="file"
         />
         <C.CommunityBtn onClick={() => console.log(data)}>
           올리기

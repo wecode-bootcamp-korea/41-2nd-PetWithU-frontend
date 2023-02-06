@@ -1,24 +1,42 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import * as C from './CommunityStyle';
 import { GoX } from 'react-icons/go';
 import CommunitySearch from './CommunitySearch';
+import axios from 'axios';
 
 export default function CommunityPlusItem({
   item,
-  product,
-  productItem,
-  findedItem,
   setProductId,
+  productId,
+  findedItem,
+  plusItem,
 }) {
   const [searchBox, setSearchBox] = useState();
-  const [searchInput, setSearchInput] = useState();
-
+  const [searchInput, setSearchInput] = useState('');
+  const [searchData, setSearchData] = useState([]);
+  console.log('2', productId);
   const searchInputValue = e => {
     setSearchInput(e.target.value);
   };
 
-  const handleSearchBox = () => {
+  const handleSearchBox = e => {
     setSearchBox(!searchBox);
+  };
+  useEffect(() => {
+    const mockData = async () => {
+      const res = await axios.get('http://localhost:3001/mock/mock.json');
+      setSearchData(res.data);
+    };
+    mockData();
+  }, [searchInput]);
+  const handleSearch = e => {
+    if (e.key === 'Enter') {
+      setSearchData(
+        searchData.filter(e => {
+          return e.name.includes(searchInput);
+        })
+      );
+    }
   };
   return (
     <>
@@ -38,21 +56,26 @@ export default function CommunityPlusItem({
           <C.SearchInput
             type="text"
             placeholder="검색어를 입력하세요"
-            value={searchInput || ''}
+            value={searchInput}
             onChange={searchInputValue}
-            onKeyUp={productItem}
+            onKeyUp={handleSearch}
           />
           <GoX onClick={handleSearchBox} className="x" />
         </C.SearchInputBox>
-        {product.map(product => {
-          return (
-            <CommunitySearch
-              product={product}
-              findedItem={findedItem}
-              setProductId={setProductId}
-            />
-          );
-        })}
+        {searchInput === ''
+          ? ''
+          : searchData.map(product => {
+              return (
+                <CommunitySearch
+                  key={product.id}
+                  product={product}
+                  setProductId={setProductId}
+                  productId={productId}
+                  findedItem={findedItem}
+                  handleSearchBox={handleSearchBox}
+                />
+              );
+            })}
       </C.Search>
     </>
   );

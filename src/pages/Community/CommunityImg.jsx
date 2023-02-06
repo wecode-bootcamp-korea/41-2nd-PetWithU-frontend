@@ -1,25 +1,15 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 import * as C from './CommunityStyle';
 import { BsTrash } from 'react-icons/bs';
 import CommunityForm from './CommunityForm';
 import CommunityPlusItem from './CommunityPlusItem';
-import axios from 'axios';
 
 export default function CommunityImg({ idx, data, item, setData }) {
   const [plusItem, setPlusItem] = useState([]);
   const plusItemId = useRef(0);
-  const [product, setProduct] = useState([]);
   const findedItem = data.find(data => data.id === item.id);
-  const [productId, setProductId] = useState(0);
+  const [productId, setProductId] = useState();
 
-  const productItem = async e => {
-    if (e.key === 'Enter') {
-      const res = await axios.get(
-        'http://10.58.52.81:3001/products/search?keyword=강아지'
-      );
-      setProduct(res.data);
-    }
-  };
   const handlePlusItem = e => {
     setPlusItem([
       ...plusItem,
@@ -32,20 +22,21 @@ export default function CommunityImg({ idx, data, item, setData }) {
       },
     ]);
     addTagList(e);
+    console.log('1', productId);
   };
   const addTagList = e => {
     findedItem.tagList = [
       ...findedItem.tagList,
       {
-        id: plusItemId.current++,
+        id: productId,
         offset: {
           x: e.nativeEvent.offsetX,
           y: e.nativeEvent.offsetY,
         },
-        productId: productId,
       },
     ];
   };
+
   const removeItem = e => {
     setData(data.filter(item => item.id !== e.id));
   };
@@ -58,14 +49,12 @@ export default function CommunityImg({ idx, data, item, setData }) {
         {plusItem.map((item, idx) => {
           return (
             <CommunityPlusItem
-              item={item}
               key={idx}
-              data={data}
-              setData={setData}
-              product={product}
+              item={item}
               setProductId={setProductId}
-              productItem={productItem}
+              productId={productId}
               findedItem={findedItem}
+              plusItem={plusItem}
             />
           );
         })}
