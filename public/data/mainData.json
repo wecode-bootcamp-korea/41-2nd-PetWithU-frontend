@@ -1,0 +1,150 @@
+{
+  "todayProducts": [
+    {
+      "id": 1,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216197612-03e64ce4-5acf-4cdf-999c-0fe1f1182027.png",
+      "name": "칠면조 살코기 성견용 강아지 사료",
+      "price": "10000.00"
+    },
+    {
+      "id": 4,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216199205-b646258f-5d15-458b-940b-badd5dbebb32.png",
+      "name": "수심 동결건조 트릿 강아지 간식",
+      "price": "8000.00"
+    },
+    {
+      "id": 7,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216199882-a68c138f-3304-4c1a-8ed1-68f5944f2d2d.png",
+      "name": "실타래 장난감",
+      "price": "3500.00"
+    },
+    {
+      "id": 10,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216200066-1eaddf30-4766-4420-9eb6-92d3fad9f94f.png",
+      "name": "닭고기와 참치 사료",
+      "price": "49000.00"
+    },
+    {
+      "id": 13,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216201906-2618d1d7-af39-4094-9e81-bd57d06a8939.png",
+      "name": "간식 고소한 참치맛 고양이용",
+      "price": "3300.00"
+    },
+    {
+      "id": 16,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216202691-2780eb37-9a22-4d10-ac97-fffba975c699.png",
+      "name": "고양이용 캣티클러 쥐 장난감",
+      "price": "5000.00"
+    }
+  ],
+  "allProducts": [
+    {
+      "id": 1,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216197612-03e64ce4-5acf-4cdf-999c-0fe1f1182027.png",
+      "name": "칠면조 살코기 성견용 강아지 사료",
+      "price": "10000.00"
+    },
+    {
+      "id": 2,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216198481-9a4db59b-d2ed-4fad-bd66-a722da58ef20.png",
+      "name": "세븐웰 대형견 전연령사료",
+      "price": "31000.00"
+    },
+    {
+      "id": 3,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216198686-8bc3d375-8d2b-46b9-80d1-562ff01b14ff.png",
+      "name": "강아지 습식 사료 쇠고기맛",
+      "price": "3500.00"
+    },
+    {
+      "id": 4,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216199205-b646258f-5d15-458b-940b-badd5dbebb32.png",
+      "name": "수심 동결건조 트릿 강아지 간식",
+      "price": "8000.00"
+    },
+    {
+      "id": 5,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216199555-fcb51431-2d89-4d30-9183-1a275121dba5.png",
+      "name": "피크닉 소시지 강아지용 간식",
+      "price": "2100.00"
+    },
+    {
+      "id": 6,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216199749-a9d04883-81e2-47b6-9209-fd2927e7c53b.png",
+      "name": "황태 핫태 애견용 간식",
+      "price": "8000.00"
+    },
+    {
+      "id": 7,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216199882-a68c138f-3304-4c1a-8ed1-68f5944f2d2d.png",
+      "name": "실타래 장난감",
+      "price": "3500.00"
+    },
+    {
+      "id": 8,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216199910-93db8e78-3ccb-4221-9dc4-d3a57881b76b.png",
+      "name": "봉제 장난감",
+      "price": "3700.00"
+    },
+    {
+      "id": 9,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216199927-138d2ed0-7977-46b1-873d-2d992945436e.png",
+      "name": "애니멀 펫토이 장난감",
+      "price": "7200.00"
+    },
+    {
+      "id": 10,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216200066-1eaddf30-4766-4420-9eb6-92d3fad9f94f.png",
+      "name": "닭고기와 참치 사료",
+      "price": "49000.00"
+    },
+    {
+      "id": 11,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216201639-e530cd68-2f0e-4818-a7e0-8a051dfb176e.png",
+      "name": "참치오리지널 고양이용",
+      "price": "3300.00"
+    },
+    {
+      "id": 12,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216201789-42c419a1-a11a-4819-92b7-8420762ea135.png",
+      "name": "건식사료 풍부한 참치맛",
+      "price": "19200.00"
+    },
+    {
+      "id": 13,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216201906-2618d1d7-af39-4094-9e81-bd57d06a8939.png",
+      "name": "간식 고소한 참치맛 고양이용",
+      "price": "3300.00"
+    },
+    {
+      "id": 14,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216201420-b3818c7f-4d55-4e6f-b580-540b9ff70d27.png",
+      "name": "챠오 츄루 가다랑어 고양이용 간식",
+      "price": "2300.00"
+    },
+    {
+      "id": 15,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216202587-09cc2889-2cbe-415b-9dc4-fc936bee48ec.png",
+      "name": "크런치 참치와 연어 고양이용 간식",
+      "price": "6800.00"
+    },
+    {
+      "id": 16,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216202691-2780eb37-9a22-4d10-ac97-fffba975c699.png",
+      "name": "고양이용 캣티클러 쥐 장난감",
+      "price": "5000.00"
+    },
+    {
+      "id": 17,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216202723-7c648719-2a6b-46c8-afa4-e7e8a5932ff6.png",
+      "name": "골프공 고양이용",
+      "price": "3700.00"
+    },
+    {
+      "id": 18,
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216202661-e9859838-af86-4d43-979b-7b5753636556.png",
+      "name": "잠자리 낚시대 장난감",
+      "price": "1800.00"
+    }
+  ]
+}
