@@ -1,6 +1,7 @@
 import React from 'react';
 import * as L from './Login.styles';
-import { SiKakaotalk, SiGoogle } from 'react-icons/si';
+import { FcGoogle } from 'react-icons/fc';
+import { RiKakaoTalkFill } from 'react-icons/ri';
 import { REDIRECT_URI, REST_API_KEY } from './KakaoApiData';
 
 function Login() {
@@ -16,14 +17,14 @@ function Login() {
       <L.LoginBox>
         <L.FormBox>
           <L.Title>PetWith U</L.Title>
-          <L.SotialBtn primary onClick={e => kakaoLogin(e)}>
-            <SiKakaotalk />
-            <L.SotialText>카카오로 로그인 하기</L.SotialText>
-          </L.SotialBtn>
-          <L.SotialBtn>
-            <SiGoogle />
-            <L.SotialText>구글로 로그인 하기</L.SotialText>
-          </L.SotialBtn>
+          <L.BtnList>
+            <L.SotialBtn primary onClick={e => kakaoLogin(e)}>
+              <RiKakaoTalkFill className="kakao" />
+            </L.SotialBtn>
+            <L.SotialBtn>
+              <FcGoogle />
+            </L.SotialBtn>
+          </L.BtnList>
         </L.FormBox>
       </L.LoginBox>
     </L.Login>
