@@ -26,7 +26,7 @@ const KakaoLogin = () => {
   };
 
   const postToken = (key, value) => {
-    fetch('http://10.58.52.161:3001/users/kakaologin', {
+    fetch('http://13.125.233.27:3000/users/kakaologin', {
       method: 'POST',
       headers: {
         'Content-Type': 'Authoriaztion',

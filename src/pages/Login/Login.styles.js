@@ -19,7 +19,7 @@ export const Title = styled.p`
   font-size: 30px;
   font-weight: 700;
   padding: 30px;
-  font-family: Gugi, cursive;
+  font-family: 'Luckiest Guy', cursive;
 `;
 
 export const FormBox = styled.form`
@@ -30,6 +30,12 @@ export const FormBox = styled.form`
   width: 60%;
   height: 100%;
   padding: 20px;
+`;
+
+export const BtnList = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
 `;
 
 export const InputBox = styled.div`
@@ -64,13 +70,13 @@ export const SotialBtn = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60%;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   margin: 5px 0px 5px 0px;
-  border: 1px;
-  border-radius: ${theme.radius};
-  background-color: ${props => (props.primary ? 'yellow' : 'skyblue')};
-  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: ${props => (props.primary ? '#f9e000' : 'white')};
+  font-size: 60px;
   cursor: pointer;
 `;
 
