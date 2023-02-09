@@ -2,12 +2,9 @@ import React, { useState } from 'react';
 import * as T from './TrailCourseComment.styles';
 import { IoMdClose } from 'react-icons/io';
 
-function TrailCourseComment({
-  postComment,
-  commentList,
-  commentNumber,
-  onDelete,
-}) {
+function TrailCourseComment({ commentList, commentNumber, commentFetch }) {
+  const [inputValue, setInputValue] = useState('');
+
   // useEffect(() => {
   //   fetch('/data/TrailCourseCommentData.json')
   //     .then(res => res.json())
@@ -16,14 +13,12 @@ function TrailCourseComment({
   //     });
   // }, []);
 
-  const [inputValue, setInputValue] = useState('');
-
   const onChange = e => {
     setInputValue(e.target.value);
   };
 
   const postCommentDone = inputValue => () => {
-    postComment(inputValue);
+    commentFetch(inputValue);
     setInputValue('');
   };
 
@@ -55,17 +50,17 @@ function TrailCourseComment({
         </T.CommentInputBox>
       </T.CommentBox>
       <T.TrailCourseCommentList>
-        {commentList.map(({ id, userProfileImg, username, content }) => {
+        {commentList.map(({ reviewId, profileImage, nickname, content }) => {
           return (
-            <T.Comment key={id}>
-              <T.UserProfileImg src={userProfileImg} />
+            <T.Comment key={reviewId}>
+              <T.UserProfileImg src={profileImage} />
               <T.CommentRight>
-                <T.UserNickname>{username}</T.UserNickname>
+                <T.UserNickname>{nickname}</T.UserNickname>
                 <T.CommentText>{content}</T.CommentText>
               </T.CommentRight>
-              <T.DeleteBtn onClick={onDelete(id)} username={username} id={id}>
+              {/* <T.DeleteBtn onClick= username={username} id={id}>
                 <IoMdClose />
-              </T.DeleteBtn>
+              </T.DeleteBtn> */}
             </T.Comment>
           );
         })}

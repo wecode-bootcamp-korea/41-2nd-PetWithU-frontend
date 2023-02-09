@@ -6,10 +6,10 @@ import Main from './pages/Main/Main';
 import Login from './pages/Login/Login';
 import Community from './pages/Community/Community';
 import Feed from './pages/Feed/Feed';
-import TrailCourseList from './pages/TrailCourse/TrailCourseList';
-import TrailCourseDetail from './pages/TrailCourseDetail/TrailCourseDetail';
+// import TrailCourseList from './pages/TrailCourse/TrailCourseList';
 import Store from './pages/Store/Store';
-import CommonDetail from './pages/Detail/CommonDetail/CommonDetail';
+// import CommonDetail from './pages/Detail/CommonDetail/CommonDetail';
+import TrailCourseDetail from './pages/TrailCourseDetail/TrailCourseDetail';
 import Cart from './pages/Cart/Cart';
 import KakaoLogin from './pages/Login/KakaoLogin';
 
@@ -23,10 +23,10 @@ export default function Router() {
         <Route path="/kakaoLogin" element={<KakaoLogin />} />
         <Route path="/community" element={<Community />} />
         <Route path="/feed" element={<Feed />} />
-        <Route path="/promenade" element={<TrailCourseList />} />
+        {/* <Route path="/trail" element={<TrailCourseList />} /> */}
         <Route path="/promenade/detail/6" element={<TrailCourseDetail />} />
         <Route path="/store" element={<Store />} />
-        <Route path="/detail" element={<CommonDetail />} />
+        {/* <Route path="/detail" element={<CommonDetail />} /> */}
         <Route path="/cart" element={<Cart />} />
       </Routes>
       <Footer />

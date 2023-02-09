@@ -7,7 +7,7 @@
   },
   {
     "SEOUL_CATEGORY": [
-      { "id": 1, "city": "전체" },
+      { "id": 1, "city": "all" },
       { "id": 2, "city": "강남구" },
       { "id": 3, "city": "강동구" },
       { "id": 4, "city": "강북구" },
@@ -37,7 +37,7 @@
   },
   {
     "GG_CATEGORY": [
-      { "id": 1, "city": "전체" },
+      { "id": 1, "city": "all" },
       { "id": 2, "city": "가평" },
       { "id": 3, "city": "고양" },
       { "id": 4, "city": "과천" },

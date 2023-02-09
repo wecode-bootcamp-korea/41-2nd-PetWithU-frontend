@@ -27,7 +27,7 @@ function TrailCourseDetail() {
   // }, []);
 
   useEffect(() => {
-    fetch('http://13.125.233.27:3000/promenade/detail/6', {
+    fetch('http://3.38.247.226:3000/promenade/detail/6', {
       headers: {
         Authorization:
           'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY3NTcwNjQ5OH0.pu1WqqhWifWjC4D4Q_CSqQ2vDCJbAISzR7cnWXmNe5g',
@@ -43,17 +43,60 @@ function TrailCourseDetail() {
       });
   }, []);
 
-  const postComment = commentText => {
-    const copy = [...commentList];
-    const newId = copy.length > 0 ? commentList.slice(-1)[0].id + 1 : 1;
-    copy.push({
-      id: newId,
-      userProfileImg: '/images/TrailCourseImg/trail1.jpg',
-      username: '나나바나나',
-      content: commentText,
-    });
-    setCommentList(copy);
+  const commentFetch = inputValue => {
+    fetch('http://3.38.247.226:3000/promenade/review', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8',
+        Authorization:
+          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY3NTcwNjQ5OH0.pu1WqqhWifWjC4D4Q_CSqQ2vDCJbAISzR7cnWXmNe5g',
+      },
+      body: JSON.stringify({
+        postId: 6,
+        content: inputValue,
+      }),
+    }).then(
+      fetch('http://3.38.247.226:3000/promenade/detail/6', {
+        headers: {
+          Authorization:
+            'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY3NTcwNjQ5OH0.pu1WqqhWifWjC4D4Q_CSqQ2vDCJbAISzR7cnWXmNe5g',
+        },
+      })
+        .then(res => res.json())
+        .then(result => {
+          setCommentList(result.postReviews);
+        })
+    );
   };
+
+  // const postComment =  => {
+  //   // const copy = [...commentList];
+  //   // const newId = copy.length > 0 ? commentList.slice(-1)[0].id + 1 : 1;
+  //   // copy.push({
+  //   //   id: newId,
+  //   //   userProfileImg: '/images/TrailCourseImg/trail1.jpg',
+  //   //   username: '나나바나나',
+  //   //   content: commentText,
+  //   // });
+  //   // setCommentList(copy);
+
+  //   const commentFetch = inputValue => {
+  //     fetch('http://3.38.247.226:3000/promenade/review', {
+  //       headers: {
+  //         Authorization:
+  //           'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY3NTcwNjQ5OH0.pu1WqqhWifWjC4D4Q_CSqQ2vDCJbAISzR7cnWXmNe5g',
+  //       },
+  //       body: JSON.stringify({
+  //         postId: 6,
+  //         content: inputValue,
+  //       }),
+  //     })
+  //       .then(res => res.json())
+  //       .then(result => {
+  //         setCommentList(result);
+  //       });
+  //   };
+  // };
 
   const commentNumber = commentList.length;
 
@@ -105,11 +148,11 @@ function TrailCourseDetail() {
     return `${Math.floor(years)}년 전`;
   };
 
-  const onDelete = id => () => {
-    let copy = [...commentList];
-    const filterComment = copy.filter(item => item.id !== id);
-    setCommentList(filterComment);
-  };
+  // const onDelete = id => () => {
+  //   let copy = [...commentList];
+  //   const filterComment = copy.filter(item => item.id !== id);
+  //   setCommentList(filterComment);
+  // };
 
   // const token = localStorage.getItem('accessToken');
 
@@ -177,10 +220,9 @@ function TrailCourseDetail() {
           </T.UserInfoBottom>
         </T.DetailContent>
         <TrailCourseComment
-          postComment={postComment}
           commentList={commentList}
           commentNumber={commentNumber}
-          onDelete={onDelete}
+          commentFetch={commentFetch}
         />
       </T.DetailContentWrapper>
     </>
