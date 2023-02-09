@@ -15,7 +15,7 @@ function TrailCourseList() {
 
   useEffect(() => {
     fetch(
-      `http://13.125.233.27:3000/promenade?city=${cityId}&arrondissement=${arrondissementId}&page=${offset}&pagination=${limit}`,
+      `http://3.38.247.226:3000/promenade?city=${cityId}&arrondissement=${arrondissementId}&page=${offset}&pagination=${limit}`,
       {
         headers: {
           Authorization:
