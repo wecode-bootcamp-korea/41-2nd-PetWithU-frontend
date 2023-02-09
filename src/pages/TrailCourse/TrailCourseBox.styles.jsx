@@ -13,6 +13,10 @@ export const TrailCourseImgBox = styled.div`
   border-radius: ${theme.radius};
   display: flex;
   position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const TrailCourseImg = styled.img`

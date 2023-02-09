@@ -11,7 +11,7 @@ function TrailCourseList() {
   const [arrondissementId, setArrondissementId] = useState('all');
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const limit = 9;
+  const limit = 6;
 
   useEffect(() => {
     fetch(
@@ -29,10 +29,9 @@ function TrailCourseList() {
       });
   }, [offset]);
 
-  console.log(cityId, arrondissementId);
   const handleMoreClick = () => {
-    setOffset(offset + 9);
-    searchParams.set('page', offset + 9);
+    setOffset(offset + 1);
+    searchParams.set('page', offset + 1);
     searchParams.set('pagination', limit);
     setSearchParams(searchParams);
   };
@@ -61,6 +60,7 @@ function TrailCourseList() {
             return (
               <TrailCourseBox
                 key={postId}
+                postId={postId}
                 thumbnail={thumbnail}
                 title={title}
                 profileImage={profileImage}

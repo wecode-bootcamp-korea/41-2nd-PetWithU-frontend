@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import * as T from './TrailCourseBox.styles';
 import { RiBookmarkFill } from 'react-icons/ri';
 
 function TrailCourseBox({
+  postId,
   thumbnail,
   title,
   profileImage,
@@ -13,15 +15,20 @@ function TrailCourseBox({
 }) {
   const collectionBoolean = JSON.parse(collectionState);
   const [clickScrap, setClickScrap] = useState(collectionBoolean);
+  const navigate = useNavigate();
 
   const handleScrap = () => {
     setClickScrap(!clickScrap);
     // 백엔드 통신으로 보내기
   };
 
+  const moveTo = postId => {
+    navigate(`/promenade/detail/${postId}`);
+  };
+
   return (
     <T.TrailCourse>
-      <T.TrailCourseImgBox>
+      <T.TrailCourseImgBox onClick={() => moveTo(postId)}>
         <T.TrailCourseImg src={thumbnail} alt="산책로" />
         <T.TrailScrapBtn onClick={handleScrap} clickScrap={clickScrap}>
           <RiBookmarkFill className="bookmarkBtn" />
