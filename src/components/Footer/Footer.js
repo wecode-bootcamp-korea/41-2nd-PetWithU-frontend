@@ -31,44 +31,22 @@ function Footer() {
       </F.CompanyInfo>
       <F.CompanyBtnList>
         <F.FirstList>
-          <li>
-            <F.Small>회사소개</F.Small>
-          </li>
-          <li>
-            <F.Small>채용정보</F.Small>
-          </li>
-          <li>
-            <F.Small>이용약관</F.Small>
-          </li>
-          <li>
-            <F.Small>개인정보</F.Small>
-          </li>
-          <li>
-            <F.Small>처리방침</F.Small>
-          </li>
-          <li>
-            <F.Small>공지사항</F.Small>
-          </li>
+          {FIRST_LIST.map(({ text }, index) => {
+            return (
+              <li key={index}>
+                <F.Small>{text}</F.Small>
+              </li>
+            );
+          })}
         </F.FirstList>
         <F.SecondList>
-          <li>
-            <F.Small>안전거래센터</F.Small>
-          </li>
-          <li>
-            <F.Small>입점신청</F.Small>
-          </li>
-          <li>
-            <F.Small>제휴/광고 문의</F.Small>
-          </li>
-          <li>
-            <F.Small>사업자 구매 회원</F.Small>
-          </li>
-          <li>
-            <F.Small>시공파트너 안내</F.Small>
-          </li>
-          <li>
-            <F.Small>상품광고 소개</F.Small>
-          </li>
+          {SECOND_LIST.map(({ text }, index) => {
+            return (
+              <li key={index}>
+                <F.Small>{text}</F.Small>
+              </li>
+            );
+          })}
         </F.SecondList>
       </F.CompanyBtnList>
       <F.Img src="/images/123.png" />
@@ -77,3 +55,25 @@ function Footer() {
 }
 
 export default Footer;
+
+const FIRST_LIST = [
+  {
+    text: '회사소개',
+  },
+  { text: '입점신청' },
+  { text: '이용약관' },
+  { text: '개인정보' },
+  { text: '처리방침' },
+  { text: '공지사항' },
+];
+
+const SECOND_LIST = [
+  {
+    text: '안전거래센터',
+  },
+  { text: '입점신청' },
+  { text: '제휴/광고 문의' },
+  { text: '사업자 구매 회원' },
+  { text: '시공파트너 안내' },
+  { text: '상품광고 소개' },
+];
