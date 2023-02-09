@@ -14,8 +14,25 @@ function TrailCourseDetail() {
   const [commentList, setCommentList] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  // useEffect(() => {
+  //   fetch('/data/TrailCourseDetailData.json')
+  //     .then(res => res.json())
+  //     .then(result => {
+  //       setLocationInfo(result);
+  //       setScrapNumber(Number(result.postInfo.collectionCount));
+  //       setLikeNumber(Number(result.postInfo.likeCount));
+  //       setCommentList(result.postReviews);
+  //       setLoading(false);
+  //     });
+  // }, []);
+
   useEffect(() => {
-    fetch('/data/TrailCourseDetailData.json')
+    fetch('http://13.125.233.27:3000/promenade/detail/6', {
+      headers: {
+        Authorization:
+          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY3NTcwNjQ5OH0.pu1WqqhWifWjC4D4Q_CSqQ2vDCJbAISzR7cnWXmNe5g',
+      },
+    })
       .then(res => res.json())
       .then(result => {
         setLocationInfo(result);
