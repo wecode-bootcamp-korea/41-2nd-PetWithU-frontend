@@ -1,0 +1,152 @@
+[
+  {
+    "postInfo": {
+      "postId": 1,
+      "userId": 1,
+      "nickname": "최민주🌻",
+      "profileImage": "http://k.kakaocdn.net/dn/uCsLz/btrJmxO8ewM/uEhkd5isOAcF2HeTuwpFl1/img_640x640.jpg",
+      "createdAt": "2023-02-05T14:19:54.000Z",
+      "city": "서울특별시",
+      "arrondissement": "강남구",
+      "title": "서울 산책로 추천",
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216824734-ebd1574d-754a-4a0c-b105-fc81c1d432db.png",
+      "likeCount": "1",
+      "likeState": "true",
+      "collectionCount": "1",
+      "collectionState": "true"
+    },
+    "postMaps": [
+      {
+        "text": "마루공원",
+        "locationID": 14638011,
+        "Lat": "37.49596425668209",
+        "Lng": "127.08046740987474"
+      }
+    ]
+  },
+  {
+    "postInfo": {
+      "postId": 2,
+      "userId": 2,
+      "nickname": "주디",
+      "profileImage": "https://user-images.githubusercontent.com/53294075/216475101-806c09bf-2f4f-4781-ae8d-0e9d2ff5719d.png",
+      "createdAt": "2023-02-05T14:20:19.000Z",
+      "city": "서울특별시",
+      "arrondissement": "서초구",
+      "title": "겨울에 좋은 산책로",
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216824734-ebd1574d-754a-4a0c-b105-fc81c1d432db.png",
+      "likeCount": "1",
+      "likeState": "true",
+      "collectionCount": "1",
+      "collectionState": "true"
+    },
+    "postMaps": [
+      {
+        "text": "서리풀공원",
+        "locationID": 14638011,
+        "Lat": "37.49111270616912",
+        "Lng": "127.00061626540472"
+      }
+    ]
+  },
+  {
+    "postInfo": {
+      "postId": 3,
+      "userId": 3,
+      "nickname": "강서윤",
+      "profileImage": "https://user-images.githubusercontent.com/53294075/216475101-806c09bf-2f4f-4781-ae8d-0e9d2ff5719d.png",
+      "createdAt": "2023-02-05T14:20:31.000Z",
+      "city": "서울특별시",
+      "arrondissement": "강북구",
+      "title": "동네 산책로 자랑",
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216824734-ebd1574d-754a-4a0c-b105-fc81c1d432db.png",
+      "likeCount": "1",
+      "likeState": "true",
+      "collectionCount": "1",
+      "collectionState": "true"
+    },
+    "postMaps": [
+      {
+        "text": "북서울 꿈의숲",
+        "locationID": 14638011,
+        "Lat": "37.62359479265669",
+        "Lng": "127.04157250844636"
+      }
+    ]
+  },
+  {
+    "postInfo": {
+      "postId": 4,
+      "userId": 4,
+      "nickname": "권나현",
+      "profileImage": "https://user-images.githubusercontent.com/53294075/216475101-806c09bf-2f4f-4781-ae8d-0e9d2ff5719d.png",
+      "createdAt": "2023-02-05T14:20:58.000Z",
+      "city": "서울특별시",
+      "arrondissement": "마포구",
+      "title": "서울 예쁜 산책로",
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216824734-ebd1574d-754a-4a0c-b105-fc81c1d432db.png",
+      "likeCount": "1",
+      "likeState": "true",
+      "collectionCount": "1",
+      "collectionState": "true"
+    },
+    "postMaps": [
+      {
+        "text": "하늘공원",
+        "locationID": 14638011,
+        "Lat": "37.56853789070871",
+        "Lng": "126.88688043247119"
+      }
+    ]
+  },
+  {
+    "postInfo": {
+      "postId": 5,
+      "userId": 1,
+      "nickname": "최민주🌻",
+      "profileImage": "http://k.kakaocdn.net/dn/uCsLz/btrJmxO8ewM/uEhkd5isOAcF2HeTuwpFl1/img_640x640.jpg",
+      "createdAt": "2023-02-05T14:22:38.000Z",
+      "city": "서울특별시",
+      "arrondissement": "동작구",
+      "title": "산책하기 좋은 공원",
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216824734-ebd1574d-754a-4a0c-b105-fc81c1d432db.png",
+      "likeCount": "4",
+      "likeState": "true",
+      "collectionCount": "3",
+      "collectionState": "true"
+    },
+    "postMaps": [
+      {
+        "text": "보라매공원",
+        "locationID": 14638011,
+        "Lat": "37.49327767207369",
+        "Lng": "126.9205192637504"
+      }
+    ]
+  },
+  {
+    "postInfo": {
+      "postId": 6,
+      "userId": 5,
+      "nickname": "배경민",
+      "profileImage": "https://user-images.githubusercontent.com/53294075/216475101-806c09bf-2f4f-4781-ae8d-0e9d2ff5719d.png",
+      "createdAt": "2023-02-05T14:21:05.000Z",
+      "city": "서울특별시",
+      "arrondissement": "송파구",
+      "title": "데이트코스 추천",
+      "thumbnail": "https://user-images.githubusercontent.com/53294075/216824734-ebd1574d-754a-4a0c-b105-fc81c1d432db.png",
+      "likeCount": "1",
+      "likeState": "true",
+      "collectionCount": "3",
+      "collectionState": "true"
+    },
+    "postMaps": [
+      {
+        "text": "올림픽공원",
+        "locationID": 14638011,
+        "Lat": "37.52052956077294",
+        "Lng": "127.12080994800301"
+      }
+    ]
+  }
+]
