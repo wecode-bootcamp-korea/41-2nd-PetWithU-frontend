@@ -11,6 +11,7 @@ import Store from './pages/Store/Store';
 import CommonDetail from './pages/Detail/CommonDetail/CommonDetail';
 import Cart from './pages/Cart/Cart';
 import KakaoLogin from './pages/Login/KakaoLogin';
+import Scrap from './pages/Scrap/Scrap';
 
 export default function Router() {
   return (
@@ -19,13 +20,14 @@ export default function Router() {
       <Routes>
         <Route path="" element={<Main />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/kakaoLogin" element={<KakaoLogin />}></Route>
+        <Route path="/kakaoLogin" element={<KakaoLogin />} />
         <Route path="/community" element={<Community />} />
         <Route path="/feed" element={<Feed />} />
         <Route path="/trail" element={<TrailCourseList />} />
         <Route path="/store" element={<Store />} />
         <Route path="/detail" element={<CommonDetail />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/scrap" element={<Scrap />} />
       </Routes>
       <Footer />
     </BrowserRouter>
