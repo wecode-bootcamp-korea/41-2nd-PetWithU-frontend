@@ -14,6 +14,7 @@ function TrailCourseDetailRight({
 }) {
   const [isScrapped, setIsScrapped] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
+  const [resultMsg, setResultMsg] = useState('');
 
   // const updateScrapCount =
   //   (() => {
@@ -35,20 +36,41 @@ function TrailCourseDetailRight({
   //   },
   //   []);
 
+  const updateLikeAndCollection = value => {
+    fetch(`http://3.38.247.226:3000/promenade/${value}/6`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8',
+        Authorization:
+          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY3NTcwNjQ5OH0.pu1WqqhWifWjC4D4Q_CSqQ2vDCJbAISzR7cnWXmNe5g',
+      },
+    })
+      .then(res => res.json())
+      .then(result => {
+        setResultMsg(result.message);
+      });
+  };
+
   const scrapBtnClicked = () => {
-    const current = !isScrapped;
-    setIsScrapped(current);
-    current
-      ? handleScrapNumber(scrapNumber + 1)
-      : handleScrapNumber(scrapNumber - 1);
+    updateLikeAndCollection('collection');
+    if (resultMsg.slice(-7) === 'SUCCESS') {
+      const current = !isScrapped;
+      setIsScrapped(current);
+      current
+        ? handleScrapNumber(scrapNumber + 1)
+        : handleScrapNumber(scrapNumber - 1);
+    }
   };
 
   const likeBtnClicked = () => {
-    const current = !isLiked;
-    setIsLiked(current);
-    current
-      ? handleLikeNumber(likeNumber + 1)
-      : handleLikeNumber(likeNumber - 1);
+    updateLikeAndCollection('like');
+    if (resultMsg.slice(-7) === 'SUCCESS') {
+      const current = !isLiked;
+      setIsLiked(current);
+      current
+        ? handleLikeNumber(likeNumber + 1)
+        : handleLikeNumber(likeNumber - 1);
+    }
   };
 
   const scrollToTop = () => {
