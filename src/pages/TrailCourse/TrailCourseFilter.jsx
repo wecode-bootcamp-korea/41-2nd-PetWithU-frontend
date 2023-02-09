@@ -31,7 +31,7 @@ export default function TrailCourseFilter({
   }, []);
 
   const fetchFilter = queryString => {
-    fetch(`http://13.125.233.27:3000/promenade?${queryString}`, {
+    fetch(`http://3.38.247.226:3000/promenade?${queryString}`, {
       headers: {
         Authorization:
           'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY3NTcwNjQ5OH0.pu1WqqhWifWjC4D4Q_CSqQ2vDCJbAISzR7cnWXmNe5g',
