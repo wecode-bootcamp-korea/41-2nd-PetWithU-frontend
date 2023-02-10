@@ -3,7 +3,7 @@ import * as P from './ProductDetailStyle';
 import { BiPlusMedical } from 'react-icons/bi';
 import { ImMinus } from 'react-icons/im';
 
-export default function ProductContentBottom({ detailContent }) {
+export default function ProductContentBottom({ imgData, setImgData }) {
   const [count, setCount] = useState(1);
 
   const handleQuantity = value => {
@@ -24,10 +24,7 @@ export default function ProductContentBottom({ detailContent }) {
       <P.ProductTotalPriceBox>
         <P.ProductTotalPriceText>주문금액</P.ProductTotalPriceText>
         <P.ProductTotalPrice>
-          <span className="bold">
-            {(detailContent.price * count).toString()}
-          </span>
-          원
+          <span className="bold">{(imgData.price * count).toString()}</span>원
         </P.ProductTotalPrice>
       </P.ProductTotalPriceBox>
 
