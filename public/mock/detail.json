@@ -1,0 +1,38 @@
+//  디테일 페이지에서 GET해야할 fetch데이터
+[
+  {
+    "id": "아이템 아이디(ex: 1)",
+    "productName": "아이템 이름",
+    "productImgUrl": ["img1", "img2", "img3", "img4"],
+    "productPrice": "아이템 가격"
+  }
+]
+
+// 디테일 페이지에서 장바구니로 POST해야할 fetch데이터
+[
+    {
+        'id' : '아이템 아이디(ex:1)',
+        'productName' :'아이템 이름',
+        'productImgUrl' : 'img1(디테일 페이지에서 GET할때는 4개를 받지만 보낼때는 첫번째 배열에 있는 요소만 보내고싶습니다.)',
+        'productQuantity' :'아이템 수량'
+        'productPrice' : '아이템 가격',
+    }
+]
+
+// 장바구니 페이지에서 GET해야할 fetch데이터
+[
+    {
+        'id': '아이템 아이디',
+        'productName':'아이템 이름',
+        'productImgUrl' : 'img1',
+        'productQuantity' : '아이템 수량',
+        'productPrice' : '아이템 가격'
+    }
+]
+// 장바구니 페이지에서 결제로 POST해야할 fetch데이터
+[
+    {
+        'id': ['선택된 아이템들의 아이디 값들']
+        'totalPrice' : '선택된 아이템들의 총 합계'
+    }
+]
