@@ -3,7 +3,7 @@ import * as P from './ProductDetailStyle';
 import { BsBookmark } from 'react-icons/bs';
 import { BsShare } from 'react-icons/bs';
 import { IoIosHeart } from 'react-icons/io';
-export default function ProductContentTop({ detailContent }) {
+export default function ProductContentTop({ imgData, setImgData }) {
   return (
     <P.ProductContentTop>
       <P.ProductCategory>카테고리</P.ProductCategory>
@@ -22,7 +22,7 @@ export default function ProductContentTop({ detailContent }) {
       </P.ProductReview>
 
       <P.ProductPrice>
-        <span className="bold">{detailContent.price}</span>원
+        <span className="bold">{imgData.price}</span>원
       </P.ProductPrice>
     </P.ProductContentTop>
   );
