@@ -49,8 +49,7 @@ const Community = () => {
     fetch('http://3.38.247.226:3000/community/', {
       method: 'POST',
       headers: {
-        Authorization:
-          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY3NTcwNjQ5OH0.pu1WqqhWifWjC4D4Q_CSqQ2vDCJbAISzR7cnWXmNe5g',
+        Authorization: localStorage.getItem('token'),
       },
       body: formData,
     })
