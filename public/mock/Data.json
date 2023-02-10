@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "category": "카테고리이름",
+    "content": "내용",
+    "hashTag": "태그",
+    "img": "url",
+    "좌표tagList(plusitem)": {
+      "id": "productId",
+      "x": "",
+      "y": ""
+    }
+  },
+  {
+    "id": 1,
+    "category": "카테고리이름",
+    "content": "내용",
+    "hashTag": "태그",
+    "img": "url",
+    "좌표tagList(plusItem)": {
+      "id": "productId",
+      "x": "",
+      "y": ""
+    }
+  }
+]
