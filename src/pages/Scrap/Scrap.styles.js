@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import theme from '../../styles/theme';
 
+export const Wrapper = styled.div`
+  height: 900px;
+`;
+
 export const PageHeader = styled.div`
   width: 100%;
   display: flex;
@@ -27,23 +31,27 @@ export const UserInfo = styled.div`
   margin-bottom: 50px;
 `;
 
-export const ProfileImg = styled.div`
+export const ProfileImg = styled.img`
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 1px solid red;
+  margin-bottom: 10px;
 `;
 
 export const Username = styled.p`
   font-size: 20px;
   font-weight: 700;
+  margin-top: 10px;
 `;
 
 export const ScrapCategory = styled.div`
-  width: 100%;
-  border: 1px solid red;
+  width: 50%;
+  height: 50px;
+  margin: auto;
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 40px;
 `;
 
 export const FeedandTrailCourse = styled.div`

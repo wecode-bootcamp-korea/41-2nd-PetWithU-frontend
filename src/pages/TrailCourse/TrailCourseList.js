@@ -11,7 +11,7 @@ function TrailCourseList() {
   const [arrondissementId, setArrondissementId] = useState('all');
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const limit = 6;
+  const limit = 9;
 
   useEffect(() => {
     fetch(
@@ -26,6 +26,7 @@ function TrailCourseList() {
       .then(res => res.json())
       .then(result => {
         setTrailData(prev => [...prev, ...result.postList]);
+        console.log(result.postList);
       });
   }, [offset]);
 

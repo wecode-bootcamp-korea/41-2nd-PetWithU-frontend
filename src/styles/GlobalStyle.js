@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        background-color: rgb(243, 234, 221);
+        /* background-color: rgb(243, 234, 221); */
         font-family: 'Noto Sans KR', sans-serif;
     }`;
 export default GlobalStyle;

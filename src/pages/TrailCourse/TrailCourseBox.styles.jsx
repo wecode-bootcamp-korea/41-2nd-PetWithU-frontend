@@ -48,6 +48,10 @@ export const TrailCourseTitle = styled.p`
   margin-top: 20px;
   display: flex;
   justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const UserInfo = styled.div`

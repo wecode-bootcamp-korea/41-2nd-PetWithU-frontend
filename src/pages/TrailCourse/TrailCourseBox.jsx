@@ -28,13 +28,15 @@ function TrailCourseBox({
 
   return (
     <T.TrailCourse>
-      <T.TrailCourseImgBox onClick={() => moveTo(postId)}>
+      <T.TrailCourseImgBox>
         <T.TrailCourseImg src={thumbnail} alt="산책로" />
         <T.TrailScrapBtn onClick={handleScrap} clickScrap={clickScrap}>
           <RiBookmarkFill className="bookmarkBtn" />
         </T.TrailScrapBtn>
       </T.TrailCourseImgBox>
-      <T.TrailCourseTitle>{title}</T.TrailCourseTitle>
+      <T.TrailCourseTitle onClick={() => moveTo(postId)}>
+        {title}
+      </T.TrailCourseTitle>
       <T.UserInfo>
         <T.ProfileImg src={profileImage} alt="닉네임" />
         <T.UserNickName>{nickname}</T.UserNickName>
