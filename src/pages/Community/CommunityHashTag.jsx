@@ -1,5 +1,5 @@
-import React from 'react';
 import * as C from './CommunityStyle';
+import React from 'react';
 
 export default function CommunityHashTag({ hashTagItems }) {
   return (

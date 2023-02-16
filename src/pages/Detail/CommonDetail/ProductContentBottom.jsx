@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import * as P from './ProductDetailStyle';
 import { BiPlusMedical } from 'react-icons/bi';
 import { ImMinus } from 'react-icons/im';
+import * as P from './ProductDetailStyle';
 
 export default function ProductContentBottom({ imgData, setImgData }) {
   const [count, setCount] = useState(1);

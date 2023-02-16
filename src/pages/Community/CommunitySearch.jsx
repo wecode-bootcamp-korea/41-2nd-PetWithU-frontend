@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { GoX } from 'react-icons/go';
 import * as C from './CommunityStyle';
+import { GoX } from 'react-icons/go';
 
 export default function CommunitySearch({ item, findedItem }) {
   const [searchBox, setSearchBox] = useState(false);

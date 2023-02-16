@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import * as Ci from './CartStyle';
 import CartRight from './CartRight';
+import * as Ci from './CartStyle';
 import CartLeft from './CartLeft';
 
 function Cart() {

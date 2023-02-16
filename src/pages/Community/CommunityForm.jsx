@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import * as C from './CommunityStyle';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import CommunityHashTag from './CommunityHashTag';
+import * as C from './CommunityStyle';
 
 export default function CommunityForm({ findedItem }) {
   const [categoryBox, setCategoryBox] = useState();

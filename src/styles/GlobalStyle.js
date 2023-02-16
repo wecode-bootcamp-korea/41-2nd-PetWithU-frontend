@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        background-color: white;
+        background-color: #ffff;
         font-family: 'Noto Sans KR', sans-serif;
     }`;
 export default GlobalStyle;

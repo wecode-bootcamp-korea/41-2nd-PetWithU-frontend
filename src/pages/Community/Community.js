@@ -1,16 +1,17 @@
 import React, { useRef, useState } from 'react';
-import * as C from './CommunityStyle';
 import CommunityContainer from './CommunityContainer';
 import { AiOutlineCamera } from 'react-icons/ai';
+import { useNavigate } from 'react-router-dom';
+import * as C from './CommunityStyle';
 
 const Community = () => {
   const [data, setData] = useState([]);
   const [imgPreview, setImgPreview] = useState([]);
   const [imgList, setImgList] = useState([]);
   const upload = useRef();
+  const navigate = useNavigate();
 
   const imgUpLoad = e => {
-    console.log(e.target.files);
     setImgPreview(prev => [
       ...prev,
       {
@@ -32,7 +33,6 @@ const Community = () => {
     ]);
   };
 
-  console.log(data);
   const fileCheck = e => {
     e.preventDefault();
 
@@ -57,11 +57,9 @@ const Community = () => {
       .then(res => res.json())
       .then(data => console.log(data))
       .catch(error => console.error(error));
-
-    console.log(data);
+    navigate('/feed');
   };
 
-  console.log(typeof data.categoryId);
   return (
     <C.Community>
       {data.length === 0 ? (

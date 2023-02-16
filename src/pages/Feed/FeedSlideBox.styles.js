@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import Slider from 'react-slick';
 import theme from '../../styles/theme';
+import Slider from 'react-slick';
 
 export const ImgList = styled.div`
   display: flex;

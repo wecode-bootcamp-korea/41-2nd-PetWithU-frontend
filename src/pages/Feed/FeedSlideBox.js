@@ -1,6 +1,6 @@
 import React from 'react';
-import * as I from './FeedSlideBox.styles';
 import * as F from './Feed.styles';
+import * as I from './FeedSlideBox.styles';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 

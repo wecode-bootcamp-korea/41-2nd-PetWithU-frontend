@@ -1,8 +1,9 @@
 import React from 'react';
-import * as P from './ProductDetailStyle';
 import { BsBookmark } from 'react-icons/bs';
 import { BsShare } from 'react-icons/bs';
 import { IoIosHeart } from 'react-icons/io';
+import * as P from './ProductDetailStyle';
+
 export default function ProductContentTop({ imgData, setImgData }) {
   return (
     <P.ProductContentTop>

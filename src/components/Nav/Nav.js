@@ -93,12 +93,12 @@ const TOKEN_MY_LIST = [
 
 const MENU_LIST = [
   {
-    name: '쇼핑',
+    name: '쇼핑s',
     page: '/',
   },
   {
     name: '산책로',
-    page: '/community',
+    page: '/',
   },
   {
     name: '피드',

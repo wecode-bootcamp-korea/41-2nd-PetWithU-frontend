@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import * as Ci from './CartStyle';
 import CartList from './CartList';
+import * as Ci from './CartStyle';
 import useCart from './hooks/useCart';
 
 export default function CartLeft({ item, setItem, totalPrice, setTotalPrice }) {

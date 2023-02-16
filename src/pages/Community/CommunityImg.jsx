@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
-import * as C from './CommunityStyle';
 import { BsTrash } from 'react-icons/bs';
 import CommunityForm from './CommunityForm';
 import CommunitySearch from './CommunitySearch';
 import CommunityImgItem from './CommunityImgItem';
+import * as C from './CommunityStyle';
 
 export default function CommunityImg({
   idx,

@@ -1,8 +1,8 @@
 import React from 'react';
-import * as C from './CommunityStyle';
 import { BsTrash } from 'react-icons/bs';
 import CommunityImg from './CommunityImg';
 import CommunityForm from './CommunityForm';
+import * as C from './CommunityStyle';
 
 const CommunityContainer = ({
   data,

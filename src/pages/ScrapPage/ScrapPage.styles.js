@@ -46,7 +46,7 @@ export const ScrapMenuList = styled.li`
   font-size: 25px;
   margin-bottom: 10px;
   &:hover {
-    color: white;
+    color: #ffff;
     cursor: pointer;
   }
 `;

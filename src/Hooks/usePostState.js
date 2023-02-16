@@ -1,4 +1,4 @@
-const usePostState = postId => {
+const usePostStates = postId => {
   const postLikes = () => {
     fetch(`http://13.125.223.27:3000/community/like/${postId}`, {
       headers: {
@@ -18,4 +18,4 @@ const usePostState = postId => {
   return [postLikes, postScraps];
 };
 
-export default usePostState;
+export default usePostStates;

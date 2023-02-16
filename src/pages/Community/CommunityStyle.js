@@ -261,6 +261,6 @@ export const HashTagInput = styled.input`
   padding: 6px 10px;
 `;
 export const HashTagList = styled.ul`
-  display: inline;
+  display: inline-block;
 `;
 export const HashTagListItems = styled.li``;

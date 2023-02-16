@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Modal from './Modal';
 import * as I from './FeedSlideBox.styles';
+import Modal from './Modal';
 
 const FeedPoints = ({ item, idx }) => {
   const [modalOn, setModalOn] = useState(false);

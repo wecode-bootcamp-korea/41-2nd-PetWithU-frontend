@@ -10,6 +10,7 @@ export default function CommunityImgItem({ img, handlePlusItem }) {
         alt="img"
         onClick={handlePlusItem}
       />
+      <></>
     </>
   );
 }

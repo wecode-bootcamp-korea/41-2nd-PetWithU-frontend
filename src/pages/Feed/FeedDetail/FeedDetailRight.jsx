@@ -1,9 +1,9 @@
 import React from 'react';
-import * as FD from './FeedDetailStyle';
 import { BsHeart } from 'react-icons/bs';
 import { BsBookmark } from 'react-icons/bs';
 import { BsChat } from 'react-icons/bs';
 import { BsShare } from 'react-icons/bs';
+import * as FD from './FeedDetailStyle';
 
 export default function FeedDetailRight() {
   return (

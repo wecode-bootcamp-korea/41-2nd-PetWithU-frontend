@@ -22,7 +22,7 @@
 // 장바구니 페이지에서 GET해야할 fetch데이터
 [
     {
-        'id': '아이템 아이디',
+        'id': '아이템 아이디1',
         'productName':'아이템 이름',
         'productImgUrl' : 'img1',
         'productQuantity' : '아이템 수량',
