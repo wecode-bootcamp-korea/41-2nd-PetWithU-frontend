@@ -1,5 +1,5 @@
-import React from 'react';
 import * as S from './Search.styles';
+import React from 'react';
 
 const SearchList = ({ searchItemList }) => {
   return (

@@ -8,7 +8,7 @@ const Modal = ({ item, allProducts, mouseOff }) => {
   return (
     <M.ModalContainer
       onClick={() => {
-        navigate(`/product/Detail/${item.product_id}`);
+        navigate(`/productDetail/${item.product_id}`);
       }}
       style={{ left: item.point_x, top: item.point_y }}
     >

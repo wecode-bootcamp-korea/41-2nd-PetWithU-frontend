@@ -17,7 +17,7 @@ export const LoginBox = styled.div`
 
 export const Title = styled.p`
   font-size: 30px;
-  font-weight: 700;
+  font-weight: bold;
   padding: 30px;
   font-family: 'Luckiest Guy', cursive;
 `;

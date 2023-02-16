@@ -10,15 +10,14 @@ const Search = () => {
     setSearchText(e.target.value);
   };
 
-  // 통신
-  // useEffect(() => {
-  //   fetch(`http://10.58.52.161:3000/products/search?keyword=${searchText}`, {
-  //     method: 'GET',
-  //   })
-  //     .then(res => res.json())
-  //     .then(data => setSearchItemList(data));
-  // }, [searchText]);
-  // 쓰로틀, 디바운스
+  useEffect(() => {
+    fetch(`http://10.58.52.161:3000/products/search?keyword=${searchText}`, {
+      method: 'GET',
+    })
+      .then(res => res.json())
+      .then(data => setSearchItemList(data));
+  }, [searchText]);
+
   return (
     <S.SearchContainer>
       <S.SearchBox placeholder="검색어 입력" onChange={setText} />

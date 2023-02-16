@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import ProductContentContainer from './ProductContentContainer';
 import * as P from './ProductDetailStyle';
 import ProductImgBox from './ProductImgBox';
 
 export default function ProductDetail() {
+  const params = useParams();
+
   const [imgData, setImgData] = useState();
   useEffect(() => {
-    fetch('http://3.38.247.226:3000/products/1', {
+    fetch(`http://3.38.247.226:3000/products/${params.id}`, {
       headers: {
         Authorization:
           'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY3NTcwNjQ5OH0.pu1WqqhWifWjC4D4Q_CSqQ2vDCJbAISzR7cnWXmNe5g',

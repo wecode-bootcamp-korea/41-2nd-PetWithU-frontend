@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import * as Ci from './CartStyle';
 import { GrClose } from 'react-icons/gr';
+import * as Ci from './CartStyle';
 import { AiOutlinePlus } from 'react-icons/ai';
 import { AiOutlineMinus } from 'react-icons/ai';
 

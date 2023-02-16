@@ -1,5 +1,5 @@
-import React from 'react';
 import * as Ci from './CartStyle';
+import React from 'react';
 const SHIPPING_FEE = 3000;
 export default function CartRight({ totalPrice }) {
   return (

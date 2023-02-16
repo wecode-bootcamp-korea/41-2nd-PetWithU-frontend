@@ -1,7 +1,7 @@
 import React from 'react';
 import FeedDetailMain from './FeedDetailMain';
-import FeedDetailRight from './FeedDetailRight';
 import * as FD from './FeedDetailStyle';
+import FeedDetailRight from './FeedDetailRight';
 
 export default function FeedDetail() {
   return (

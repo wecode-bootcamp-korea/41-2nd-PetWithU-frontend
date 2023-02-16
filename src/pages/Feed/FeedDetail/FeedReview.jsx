@@ -1,6 +1,6 @@
 import React from 'react';
-import * as FD from './FeedDetailStyle';
 import FeedReviewList from './FeedReviewList';
+import * as FD from './FeedDetailStyle';
 
 export default function FeedReview() {
   return (

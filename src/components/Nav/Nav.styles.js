@@ -9,7 +9,7 @@ export const Nav = styled.div`
   align-items: center;
   width: 100vw;
   height: 100px;
-  background-color: white;
+  background-color: #ffff;
   border-bottom: 1px solid ${props => props.theme.pointColor};
   z-index: 10;
 `;

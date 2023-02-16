@@ -1,7 +1,7 @@
 import React from 'react';
 
 function CommonDetail() {
-  return <div>CommonDetail</div>;
+  return <div>CommonDetails</div>;
 }
 
 export default CommonDetail;

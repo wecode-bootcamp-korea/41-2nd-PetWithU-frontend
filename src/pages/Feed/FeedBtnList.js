@@ -6,8 +6,8 @@ import {
   AiFillHeart,
   AiFillStar,
 } from 'react-icons/ai';
-import { FaRegComment } from 'react-icons/fa';
 import { GrShareOption } from 'react-icons/gr';
+import { FaRegComment } from 'react-icons/fa';
 
 const FeedBtnList = ({
   likeCount,

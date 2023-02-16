@@ -1,7 +1,7 @@
 import React from 'react';
-import * as F from './Feed.styles';
 import FeedBtnList from './FeedBtnList';
 import FeedSlideBox from './FeedSlideBox';
+import * as F from './Feed.styles';
 
 const FeedItem = ({ item }) => {
   //구조분해할당

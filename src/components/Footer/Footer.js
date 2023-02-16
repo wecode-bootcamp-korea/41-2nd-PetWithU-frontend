@@ -7,7 +7,7 @@ function Footer() {
       <F.CompanyInfo>
         <F.InfoList>
           <li>
-            <F.Center>고객센터</F.Center>
+            <F.Center>고객센터1</F.Center>
           </li>
           <li>
             <F.MiddleSpan>1600-0876</F.MiddleSpan>

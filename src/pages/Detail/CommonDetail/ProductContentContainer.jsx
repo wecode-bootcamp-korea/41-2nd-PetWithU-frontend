@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductContentBottom from './ProductContentBottom';
-import ProductContentTop from './ProductContentTop';
 import * as P from './ProductDetailStyle';
+import ProductContentTop from './ProductContentTop';
 
 export default function ProductContentContainer({ imgData, setImgData }) {
   return (

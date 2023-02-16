@@ -1,7 +1,7 @@
 [
   {
     "STATE_CATEGORY": [
-      { "id": 1, "state": "서울특별시" },
+      { "id": 1, "state": "서울특별시 " },
       { "id": 2, "state": "경기도" }
     ]
   },

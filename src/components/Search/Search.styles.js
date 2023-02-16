@@ -4,7 +4,7 @@ import theme from '../../styles/theme';
 export const SearchContainer = styled.div`
   width: 500px;
   height: 40px;
-  z-index: 10;
+  z-index: 9;
   border-radius: 5px;
 `;
 

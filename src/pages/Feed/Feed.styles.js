@@ -19,7 +19,7 @@ export const FeedContents = styled.div`
   width: 500px;
   margin-top: 120px;
   border-radius: ${theme.radius};
-  background-color: white;
+  background-color: #ffff;
   overflow: hidden;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 `;

@@ -12,8 +12,6 @@ const ScrapPage = () => {
 
   const [list, setList] = useState([]);
 
-  console.log(list);
-
   useEffect(() => {
     fetch('http://12.125.233.27/community/collection?page=1&pagination=9', {
       headers: {

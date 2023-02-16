@@ -17,7 +17,7 @@ function Main() {
   return (
     <M.MainContainer>
       <M.MainImgBox>
-        <img src="/images/123.png" alt="그림" />
+        <img src="/images/pets.png" alt="그림" />
       </M.MainImgBox>
       <div>
         <M.TodayItemBox>
@@ -29,7 +29,7 @@ function Main() {
                   <M.TodayItem>
                     <M.ItemImg src={thumbnail} />
                     <M.ItemTitle>{name}</M.ItemTitle>
-                    <M.ItemPrice>{Math.floor(price)}원</M.ItemPrice>
+                    <M.ItemPrice>{Math.floor(price)}원s</M.ItemPrice>
                   </M.TodayItem>
                 </M.ItemList>
               );

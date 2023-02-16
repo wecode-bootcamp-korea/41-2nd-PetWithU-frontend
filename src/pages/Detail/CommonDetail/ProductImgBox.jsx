@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import * as P from './ProductDetailStyle';
 
 export default function ProductImgBox({ imgData }) {

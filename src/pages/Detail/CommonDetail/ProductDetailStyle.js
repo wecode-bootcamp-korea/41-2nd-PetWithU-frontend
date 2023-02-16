@@ -61,7 +61,7 @@ export const ProductName = styled.p`
 `;
 export const ProductIcons = styled.div`
   font-size: 1.7rem;
-  color: gray;
+  color: #808080;
   .bookMark {
     margin-right: 10px;
     cursor: pointer;

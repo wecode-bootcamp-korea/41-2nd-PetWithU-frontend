@@ -14,7 +14,7 @@ export default function FeedReviewList() {
         <FD.FeedDetailReviewListcontentList>
           <FD.FeedDetailReviewListcontent>
             <FD.FeedDetailReviewListcontentNickName>
-              닉네임
+              닉네임s
             </FD.FeedDetailReviewListcontentNickName>
             <FD.FeedDetailReviewListcontentText>
               댓글

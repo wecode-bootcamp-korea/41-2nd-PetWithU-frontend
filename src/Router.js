@@ -12,6 +12,7 @@ import CommonDetail from './pages/Detail/CommonDetail/CommonDetail';
 import Cart from './pages/Cart/Cart';
 import KakaoLogin from './pages/Login/KakaoLogin';
 import ScrapPage from './pages/ScrapPage/ScrapPage';
+import ProductDetail from './pages/Detail/CommonDetail/ProductDetail';
 
 export default function Router() {
   return (
@@ -28,6 +29,7 @@ export default function Router() {
         <Route path="/detail" element={<CommonDetail />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/scrap" element={<ScrapPage />} />
+        <Route path="/productDetail/:id" element={<ProductDetail />} />
       </Routes>
       <Footer />
     </BrowserRouter>

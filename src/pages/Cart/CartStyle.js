@@ -122,7 +122,7 @@ export const CartRightList = styled.ul`
     justify-content: space-between;
     margin: 30px 0;
     span {
-      font-weight: bold;
+      font-weight: 700;
       font-size: 1.2rem;
     }
   }

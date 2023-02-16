@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import theme from '../../styles/theme';
 
 export const MainContainer = styled.div`
   width: 100vw;
@@ -53,7 +52,7 @@ export const TodayItem = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center;  */
   width: 400px;
   padding: 10px;
   margin: 0px 20px 30px 20px;
@@ -72,13 +71,14 @@ export const ItemImg = styled.img`
   width: 280px;
   height: 280px;
   margin-bottom: 20px;
-  border: 1px solid black;
+  /* border: 1px solid black;  */
   border-radius: 10px;
 `;
 
 export const ItemTitle = styled.p`
-  font-size: 30px;
+  font-size: 20px;
+  margin-bottom: 10px;
 `;
 export const ItemPrice = styled.p`
-  font-size: 25px;
+  font-size: 18px;
 `;
